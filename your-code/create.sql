@@ -26,7 +26,7 @@ postal_code VARCHAR(10)
 
 CREATE TABLE IF NOT EXISTS salespersons(
 id INT AUTO_INCREMENT PRIMARY KEY,
-staff_id INT UNIQUE,
+staff_id INT(5) zerofill,
 staff_name VARCHAR(30),
 store VARCHAR(15)
 ) AUTO_INCREMENT=1; 
